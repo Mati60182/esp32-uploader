@@ -61,7 +61,7 @@
 
                     var hexString = Array.from(buffer).map(b => b.toString(16).padStart(2, '0')).join('');
 
-                    fetch('http://192.168.1.120/update', { ... }) // Wpisz lokalne IP ESP32
+                    fetch('http://192.168.1.120/update', { // Wpisz lokalne IP ESP32
                         method: 'POST',
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: 'hex=' + hexString
